@@ -222,7 +222,7 @@ ingress:
   ## Must be provided if Ingress is enabled
   ##
   hosts:
-    - dashboard.kube-pxe.gcy
+    - kubernetes.infrastructure.twz
   ## Kubernetes Dashboard Ingress TLS configuration
   ## Secrets must be manually created in the namespace
   ##
