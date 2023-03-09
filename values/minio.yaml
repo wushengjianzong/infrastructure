@@ -1,0 +1,24 @@
+resources:
+  requests:
+    cpu: 0.5
+    memory: 1Gi 
+  limits:
+    cpu: 0.5
+    memory: 1Gi
+
+service:
+  type: NodePort
+  nodePort: 9000
+
+persistence:
+  storageClass: openebs-hostpath
+  size: 4Gi
+
+mode: distributed
+
+accessKey: "minio"
+secretKey: "minio.twz"
+
+nasgateway:
+  enabled: true
+  replicas: 1
