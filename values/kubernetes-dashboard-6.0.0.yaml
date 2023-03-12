@@ -1,0 +1,14 @@
+protocolHttp: true
+ingress:
+  enabled: true
+  className: istio
+  customPaths:
+  - path: /
+    pathType: Prefix
+    backend:
+      service:
+        name: kubernetes-dashboard
+        port:
+          name: http
+  hosts:
+  - kubernetes.infrastructure.twz
