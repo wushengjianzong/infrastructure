@@ -1,8 +1,0 @@
-localprovisioner:
-  hostpathClass:
-    basePath: /var/openebs/local
-
-nfs-provisioner:
-  enabled: true
-  nfsStorageClass:
-    backendStorageClass: openebs-hostpath

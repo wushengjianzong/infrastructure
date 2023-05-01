@@ -14,11 +14,11 @@ ingress:
 
 protocolHttp: true
 
-metricsScraper:
-  enabled: true
-metrics-server:
-  enabled: true
-  fullnameOverride: metrics-server
-  args:
-  - --kubelet-preferred-address-types=InternalIP
-  - --kubelet-insecure-tls
+# metricsScraper:
+#   enabled: true
+# metrics-server:
+#   enabled: true
+#   fullnameOverride: metrics-server
+#   args:
+#   - --kubelet-preferred-address-types=InternalIP
+#   - --kubelet-insecure-tls
