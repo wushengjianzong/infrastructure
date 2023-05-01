@@ -1,0 +1,10 @@
+ingress:
+  enabled: true
+  ingressClassName: istio
+  hosts:
+    - grafana.infrastructure.twz
+
+adminPassword: luyun2023
+
+plugins:
+- grafana-clickhouse-datasource

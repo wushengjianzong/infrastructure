@@ -14,6 +14,10 @@ ingress:
 
 protocolHttp: true
 
+# service:
+#   type: NodePort
+#   nodePort: 9090
+
 # metricsScraper:
 #   enabled: true
 # metrics-server:
