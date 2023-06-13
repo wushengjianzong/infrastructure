@@ -1,0 +1,12 @@
+init:
+  cidr: 100.64.0.0/16
+
+manager:
+  replicas: 1
+webhook:
+  replicas: 1
+typha:
+  replicas: 1
+daemon:
+  enableFelixPolicy: false
+vmIPRetain: true

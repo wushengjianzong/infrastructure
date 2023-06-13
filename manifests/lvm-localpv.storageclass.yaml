@@ -1,0 +1,33 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: openebs-lvm-dell-r620
+allowVolumeExpansion: true
+allowedTopologies:
+- matchLabelExpressions:
+  - key: kubernetes.io/hostname
+    values:
+      - dell-r620
+parameters:
+  storage: lvm
+  volgroup: dell-r620-vg
+provisioner: local.csi.openebs.io
+# volumeBindingMode: WaitForFirstConsumer
+
+---
+
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: openebs-lvm-dell-r630
+allowVolumeExpansion: true
+allowedTopologies:
+- matchLabelExpressions:
+  - key: kubernetes.io/hostname
+    values:
+      - dell-r630
+parameters:
+  storage: lvm
+  volgroup: rl
+provisioner: local.csi.openebs.io
+# volumeBindingMode: WaitForFirstConsumer
