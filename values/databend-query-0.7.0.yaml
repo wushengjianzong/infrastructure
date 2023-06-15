@@ -1,0 +1,12 @@
+config:
+  meta:
+    endpoints:
+      - "databend-meta-0.databend-meta:9191"
+  storage:
+    type: s3
+    s3:
+      bucket: databend
+      endpoint_url: http://minio.kube-csi:9000
+      access_key_id: admin
+      secret_access_key: juxiang2023
+      enable_virtual_host_style: false

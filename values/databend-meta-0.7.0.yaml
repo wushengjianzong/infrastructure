@@ -1,0 +1,3 @@
+persistence:
+  storageClass: openebs-hostpath
+  size: 16Gi

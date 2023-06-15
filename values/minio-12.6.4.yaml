@@ -1,0 +1,6 @@
+auth:
+  rootUser: admin
+  rootPassword: "juxiang2023"
+persistence:
+  storageClass: openebs-hostpath
+  size: 8Gi
