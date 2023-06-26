@@ -1,0 +1,25 @@
+apiVersion: networking.alibaba.com/v1
+kind: Subnet
+metadata:
+  name: telemetry
+spec:
+  config:
+    autoNatOutgoing: true
+  network: init
+  range:
+    cidr: 172.22.0.0/16
+    version: "4"
+
+---
+
+apiVersion: networking.alibaba.com/v1
+kind: Subnet
+metadata:
+  name: kubevirt
+spec:
+  config:
+    autoNatOutgoing: true
+  network: init
+  range:
+    cidr: 172.24.0.0/16
+    version: "4"

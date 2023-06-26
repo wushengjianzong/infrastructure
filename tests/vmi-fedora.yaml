@@ -1,31 +1,41 @@
 apiVersion: kubevirt.io/v1
-kind: VirtualMachineInstance
+kind: VirtualMachine
 metadata:
   labels:
     special: vmi-fedora
   name: vmi-fedora
+  namespace: kubevirt
 spec:
-  domain:
-    devices:
-      disks:
-      - disk:
-          bus: virtio
-        name: containerdisk
-      - disk:
-          bus: virtio
-        name: cloudinitdisk
-      rng: {}
-    resources:
-      requests:
-        memory: 1024M
-  terminationGracePeriodSeconds: 0
-  volumes:
-  - containerDisk:
-      image: kubevirt/fedora-with-test-tooling-container-disk:devel
-    name: containerdisk
-  - cloudInitNoCloud:
-      userData: |-
-        #cloud-config
-        password: fedora
-        chpasswd: { expire: False }
-    name: cloudinitdisk
+  runStrategy: Always
+  template:
+    spec:
+      domain:
+        devices:
+          disks:
+          - disk:
+              bus: virtio
+            name: system
+          - disk:
+              bus: virtio
+            name: cloud-init
+          - disk:
+              bus: virtio
+            name: data
+          rng: {}
+        resources:
+          requests:
+            memory: 1024M
+      terminationGracePeriodSeconds: 0
+      volumes:
+      - containerDisk:
+          image: registry:5000/kubevirt/fedora-with-test-tooling-container-disk:devel
+        name: system
+      - cloudInitNoCloud:
+          userData: |-
+            #cloud-config
+            password: fedora
+            chpasswd: { expire: False }
+        name: cloud-init
+      - name: data
+        persistentVolumeClaim:
+          claimName: pvc-fedora

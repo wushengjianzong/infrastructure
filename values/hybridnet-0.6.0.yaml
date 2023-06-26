@@ -1,5 +1,5 @@
 init:
-  cidr: 100.64.0.0/16
+  cidr: 172.20.0.0/16
 
 manager:
   replicas: 1

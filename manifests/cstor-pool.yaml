@@ -1,0 +1,41 @@
+apiVersion: cstor.openebs.io/v1
+kind: CStorPoolCluster
+metadata:
+ name: sdb
+ namespace: kube-csi
+spec:
+ pools:
+   - nodeSelector:
+       kubernetes.io/hostname: debian-7vpb742
+     dataRaidGroups:
+       - blockDevices:
+           - blockDeviceName: blockdevice-64dab4f1310ebc529541508cf1a223a7
+     poolConfig:
+       dataRaidGroupType: stripe
+   - nodeSelector:
+       kubernetes.io/hostname: debian-7xjjcd2
+     dataRaidGroups:
+       - blockDevices:
+           - blockDeviceName: blockdevice-8085d01f14ffd9da89900f14fffd1f91
+     poolConfig:
+       dataRaidGroupType: stripe
+   - nodeSelector:
+       kubernetes.io/hostname: debian-10c8xj2
+     dataRaidGroups:
+       - blockDevices:
+           - blockDeviceName: blockdevice-d29425a9b44890df8fc4da81552b167f
+     poolConfig:
+       dataRaidGroupType: stripe
+
+---
+
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: sdb
+provisioner: cstor.csi.openebs.io
+allowVolumeExpansion: true
+parameters:
+  cas-type: cstor
+  cstorPoolCluster: sdb
+  replicaCount: "3"
