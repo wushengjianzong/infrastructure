@@ -1,0 +1,51 @@
+apiVersion: pool.kubevirt.io/v1alpha1
+kind: VirtualMachinePool
+metadata:
+  name: vmp-fedora
+  namespace: kubevirt
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      kubevirt.io/vmpool: vmp-fedora
+  virtualMachineTemplate:
+    metadata:
+      labels:
+        kubevirt.io/vmpool: vmp-fedora
+    spec:
+      running: true
+      template:
+        metadata:
+          labels:
+            kubevirt.io/vmpool: vmp-fedora
+        spec:
+          domain:
+            devices:
+              disks:
+              - disk:
+                  bus: virtio
+                name: system
+              - disk:
+                  bus: virtio
+                name: cloud-init
+              # - disk:
+              #     bus: virtio
+              #   name: data
+              rng: {}
+            resources:
+              requests:
+                memory: 1024M
+          terminationGracePeriodSeconds: 0
+          volumes:
+          - containerDisk:
+              image: registry:5000/kubevirt/fedora-with-test-tooling-container-disk:devel
+            name: system
+          - cloudInitNoCloud:
+              userData: |-
+                #cloud-config
+                password: fedora
+                chpasswd: { expire: False }
+            name: cloud-init
+          # - name: data
+          #   persistentVolumeClaim:
+          #     claimName: pvc-fedora
