@@ -1,80 +1,80 @@
 <mxfile host="65bd71144e">
     <diagram id="EXK554bw2CkzXWhn64AR" name="Page-1">
-        <mxGraphModel dx="1675" dy="801" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1675" dy="1222" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                <mxCell id="5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
                     <mxGeometry x="80" y="200" width="200" height="280" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" value="Master Cluster" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;" vertex="1" parent="1">
-                    <mxGeometry x="80" y="200" width="60" height="30" as="geometry"/>
+                <mxCell id="18" value="Master Cluster&lt;br&gt;主控集群" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="200" width="200" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+                <mxCell id="19" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
                     <mxGeometry x="80" y="500" width="680" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="23" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;container=0;" vertex="1" connectable="0" parent="1">
+                <mxCell id="23" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;container=0;" parent="1" vertex="1" connectable="0">
                     <mxGeometry x="560" y="200" width="200" height="280" as="geometry"/>
                 </mxCell>
-                <mxCell id="28" value="User Space Network" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+                <mxCell id="28" value="User Space Network&lt;br&gt;用户态网络栈" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
                     <mxGeometry x="403" y="510" width="117" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="29" value="NVMeoF Storage" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+                <mxCell id="29" value="NVMeoF Storage&lt;br&gt;分布式存储" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
                     <mxGeometry x="600" y="510" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="31" value="Sandbox Runtime" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+                <mxCell id="31" value="Sandbox Runtime&lt;br&gt;沙箱环境运行时" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
                     <mxGeometry x="200" y="510" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="34" value="Infrastructure" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;" vertex="1" parent="1">
-                    <mxGeometry x="100" y="520" width="80" height="20" as="geometry"/>
+                <mxCell id="34" value="Infrastructure&lt;br&gt;基础设施" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="500" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="25" value="Telemetry Collector" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                <mxCell id="25" value="Telemetry Collector&lt;br&gt;观测数据采集器" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
                     <mxGeometry x="600" y="400" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="26" value="HPA/VPA Controller" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                <mxCell id="26" value="HPA/VPA Adaptor&lt;br&gt;弹性伸缩适配器" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
                     <mxGeometry x="600" y="320" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="27" value="Hybrid Deploy Scheduler" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                <mxCell id="27" value="Hybrid Deploy Scheduler&lt;br&gt;混部调度器" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
                     <mxGeometry x="600" y="240" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="33" value="Worker&lt;br&gt;Cluster" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;" vertex="1" parent="1">
-                    <mxGeometry x="560" y="200" width="60" height="30" as="geometry"/>
+                <mxCell id="33" value="Worker Cluster&lt;br&gt;工作集群" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="200" width="200" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="Artifact Hub" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                <mxCell id="6" value="Artifact Hub&lt;br&gt;制品仓库" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
                     <mxGeometry x="120" y="240" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="Telemetry Backend" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                <mxCell id="7" value="Telemetry Backend&lt;br&gt;观测数据存储后端" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
                     <mxGeometry x="120" y="320" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="Cluster API Provider" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                <mxCell id="8" value="Cluster API Provider&lt;br&gt;集群生命周期管理" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
                     <mxGeometry x="120" y="400" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="36" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;container=0;" vertex="1" connectable="0" parent="1">
+                <mxCell id="36" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;container=0;" parent="1" vertex="1" connectable="0">
                     <mxGeometry x="320" y="200" width="200" height="280" as="geometry"/>
                 </mxCell>
-                <mxCell id="37" value="Hybrid Deploy Scheduler" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                <mxCell id="37" value="Hybrid Deploy Scheduler&lt;br&gt;混部调度器" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
                     <mxGeometry x="360" y="240" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="38" value="HPA/VPA Controller" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                <mxCell id="38" value="HPA/VPA Adapter&lt;br&gt;弹性伸缩适配器" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
                     <mxGeometry x="360" y="320" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="39" value="Telemetry Collector" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                <mxCell id="39" value="Telemetry Collector&lt;br&gt;观测数据采集器" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
                     <mxGeometry x="360" y="400" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="40" value="Worker&lt;br&gt;Cluster" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;" vertex="1" parent="1">
-                    <mxGeometry x="320" y="200" width="60" height="30" as="geometry"/>
+                <mxCell id="40" value="Worker Cluster&lt;br&gt;工作集群" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="200" width="200" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="41" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+                <mxCell id="41" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
                     <mxGeometry x="80" y="120" width="680" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="43" value="IaC Platform" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+                <mxCell id="43" value="IaC Platform&lt;br&gt;平台工程" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
                     <mxGeometry x="237" y="130" width="123" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="44" value="Workload" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+                <mxCell id="44" value="Workload&lt;br&gt;工作负载" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
                     <mxGeometry x="480" y="130" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="45" value="Application" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;" vertex="1" parent="1">
-                    <mxGeometry x="80" y="140" width="120" height="20" as="geometry"/>
+                <mxCell id="45" value="Application&lt;br&gt;应用" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="120" width="120" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
